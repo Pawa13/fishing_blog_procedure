@@ -1,0 +1,190 @@
+body{
+		font-family: sans-serif;
+                background-image: url(../img/background.png);	
+}
+div{
+	margin: auto;
+	max-width: 1100px;
+	border-radius: 8px;
+	color: white;
+}
+  h1 {font-size: 100%;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: white; padding-bottom: 1%;
+  }
+   h2 {font-size: 110%;
+       font-weight: bold;
+       font-style: oblique;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #191970;
+   }
+    h3 {font-size: 80%;
+       font-style: oblique;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #4682B4;
+   }
+    a { 
+        font-size: 90%;
+        text-decoration: none;
+    color: #2F4F4F;/* Отменяем подчеркивание у ссылки */
+   } 
+
+header{
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-image: url(../img/fon1.JPG);
+	border-radius: 8px;
+	height: auto;
+	}
+
+.headerimg{
+	max-width: 100%;
+		}
+
+/*объединение блоков sidebar и content в строку*/
+#page {
+    display:flex;
+    max-width:1100px;
+    margin:0 auto;
+   }
+#main {
+    /* Это свойство позволяет данному блоку растягиваться и занимать всё доступное пространство, не затрагивая сайдбар */
+    flex-grow:1;
+    background-image: url(../img/bg1.png);
+    margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 1%;
+	padding-right: 1%;
+	color: brown;
+	}
+ 
+ aside {
+    /* Здесь задаем ширину сайдбара по умолчанию и не даем ему сужаться*/
+    flex-shrink:0;
+    width:30%;
+    background-image: url(../img/bg3.png);
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+   	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+
+footer{
+	font-size: 12px;
+	border-radius: 8px;
+	text-align: center;
+	background: linear-gradient(to top, #808000, #f1da36);
+	display: block;;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+/*меню*/
+
+.menu{
+margin-right: 5px;
+margin-left: 5px;
+margin-bottom: 5px;
+background: linear-gradient(to top, #CD853F, #f1da36);
+}
+.top-menu {
+  position: relative; 
+  background: #fff;
+  box-shadow: inset 0 0 10px #ccc;
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-top: 3px solid #575350;
+  border-bottom: 1px solid #575350;
+  margin-bottom: 2px;
+}
+.top-menu:after {
+  border-bottom: 3px solid #575350;
+  border-top: 1px solid #575350;
+  box-shadow: 0 2px 7px #ccc;
+  margin-top: 2px;
+}
+.menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+.menu-main:before,
+.menu-main:after {
+  content: "\25C8";
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-main:before {left: 15px;}
+.menu-main:after {right: 15px;}
+.menu-main li {
+  display: inline-block;
+  padding: 5px 0;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: #777777;
+  border-bottom: 1px solid transparent;
+  transition: .3s linear;
+}
+.menu-main .current, .menu-main a:hover {
+  border-radius: 3px;
+  background: #f3ece1;
+  color: #313131;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #c6c6c6;
+}
+@media all and (max-width: 800px) {
+    #page {
+        flex-flow:column;
+    }
+     /* Делаем сайдбар на всю ширину экрана */
+    aside {
+        width: auto;
+        margin-left: 5px;
+		margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	div {
+		font-size: 13px;
+	}
+
+	.menu-main a{
+		font-size: 13px;
+		margin: 1px 2px;
+                padding: 3px 7px
+	}
+	 #main {
+	 	color: #006400;
+	 	}
+}
