@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Форум о рыбалке</title>
+		<title>Блог о рыбалке</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style2.css">
 	</head>
@@ -18,7 +18,7 @@
             <section id="page">
    		<div id="main">
                     
-                      <?php include 'controllers/content_controller.php';?>      
+                      <?php include 'controllers/Front_controller.php';?>      
                 </div>
                 <aside>
                        <?php include 'view/sidebar.php';?>    

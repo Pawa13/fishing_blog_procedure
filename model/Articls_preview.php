@@ -1,6 +1,6 @@
 <?php
 
-require_once '/var/www/fishing_blog_procedure/classes/db_connect.php';
+require_once '/var/www/fishing_blog_procedure/components/Db_connect.php';
 $query = "SELECT ID,Date,Categories,Articl_name,SUBSTRING(`Text`, 1, 200) FROM `Aticls`ORDER BY ID DESC LIMIT 5";
 //$query = "SELECT * FROM `Aticls`";
 $result = mysqli_query($link, $query); 
