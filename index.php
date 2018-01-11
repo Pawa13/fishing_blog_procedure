@@ -1,7 +1,6 @@
 <?php 
 
-include 'view/shablon.php';
-require_once 'controllers/router.php';
+include 'controllers/Front_controller.php';
 
 
-?>   
+  

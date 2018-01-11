@@ -1,1 +1,0 @@
-<img class="headerimg" src="img/header2.png"> 
