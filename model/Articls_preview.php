@@ -1,7 +1,7 @@
 <?php
 
 include 'components/Db_connect.php';
-$query = "SELECT ID,Date,Categories,Articl_name,SUBSTRING(`Text`, 1, 200) FROM `Aticls`ORDER BY ID DESC LIMIT 5";
+$query = "SELECT ID,Date,Categories,Articl_name,SUBSTRING(`Text`, 1, 200) FROM `aticls`ORDER BY ID DESC LIMIT 5";
 
 $result = mysqli_query($link, $query); 
 while ($row = mysqli_fetch_assoc($result))
